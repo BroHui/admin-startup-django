@@ -1,0 +1,9 @@
+Django >=3.2,<3.3
+mysqlclient >=2.0.3,<2.1
+xlrd ==2.0.1
+openpyxl ==3.0.7
+django-bootstrap4 ==3.0.0
+PyYAML == 5.4.1
+requests >= 2.11.1
+django-cors-headers >= 1.1.0
+uwsgi >= 2.0
