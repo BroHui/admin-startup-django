@@ -1,0 +1,22 @@
+{% extends 'web/main.html' %}
+{% load static %}
+
+{% block extra_js_static_file %}
+{% endblock %}
+
+{% block main %}
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link {% if tbar == 'itema' %}active{% endif %}" href="#">ItemA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if tbar == 'itemb' %}active{% endif %}" href="#">ItemB</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  {% block content %}{% endblock %}
+{% endblock %}
+
