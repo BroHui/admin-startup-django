@@ -126,3 +126,14 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = ''
+
+# 设置 message 标记
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.INFO: 'info',
+    messages.SUCCESS: 'success',
+    messages.DEBUG: 'secondary',
+    messages.ERROR: 'danger',
+    messages.WARNING: 'warning'
+}
